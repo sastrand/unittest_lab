@@ -4,9 +4,14 @@ import cap
 class TestCap(unittest.TestCase):
 
     def setUp(self):
+        # Called before each test method
+        # Allocates exteneral resources used by tests
+        # Like database connections or test data
         pass
 
     def tearDown(self):
+        # Run after each test method
+        # Deallocates resources
         pass
 
     def test_one_word(self):
