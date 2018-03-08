@@ -6,10 +6,10 @@ in each word in the string.
 Based on this problem specification, add two more unit tests to `test.py`.
 
 And try this workflow
-    * Run `tests.py` 
-    * Observe the failures/errors
-    * Modify the code in `cap.py` to address the error
-    * (repeat)
+  * Run `tests.py` 
+  * Observe failures/errors
+  * Modify the code in `cap.py` to address the error
+  * Repeat until all the tests pass
 
 > Test code from Bill Lubanovic, Introducing Python 
 [github](https://github.com/madscheme/introducing-python)
