@@ -11,3 +11,6 @@ And try this workflow
     * Modify the code in `cap.py` to address the error
     * (repeat)
 
+> Test code from Bill Lubanovic, Introducing Python 
+[github](https://github.com/madscheme/introducing-python)
+
