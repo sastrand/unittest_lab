@@ -25,14 +25,14 @@ class TestCap(unittest.TestCase):
         self.assertEqual(result, 'A Veritable Flock Of Ducks')
 
     def test_words_with_apostrophes (self):
-        text = "I'm fresh out of ideas"
+        text = "\"did they get 'em?\", he asked."
         result = cap.capitalizer(text)
-        self.assertEqual(result, "I'm Fresh Out Of Ideas")
+        self.assertEqual(result, "\"Did They Get 'Em?\", He Asked.")
 
     def test_words_with_quotes(self):
-        text = "\"You're despicable,\" said Daffy Duck"
+        text = "\"you're awesome,\" said daffy duck"
         result = cap.capitalizer(text)
-        self.assertEqual(result, "\"You're Despicable,\" Said Daffy Duck")
+        self.assertEqual(result, "\"You're Awesome,\" Said Daffy Duck")
 
 
 if __name__ == '__main__':
