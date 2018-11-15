@@ -1,4 +1,4 @@
 def capitalizer(text):
     """Capitalizes the first letter of each word in a string."""
-    return text
-
+    # remove `pass` and [FILL IN HERE]
+    pass
