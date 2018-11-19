@@ -34,7 +34,7 @@ class TestCap(unittest.TestCase):
     def test_words_with_apostrophes (self):
         text = "\"did they find 'em?\", he asked."
         result = cap.capitalizer(text)
-        self.assertEqual(result, "\"Did They Find 'Em?\" He Asked.")
+        self.assertEqual(result, "\"Did They Find 'Em?\", He Asked.")
         
     def test_leading_number(self):
         text = "the 49ers organize"
