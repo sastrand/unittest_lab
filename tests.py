@@ -14,8 +14,8 @@ class TestCap(unittest.TestCase):
 
     def tearDown(self):
         """
-        The tearDown is called after each test method.
-        It's useful to deallocates resources and close connections.
+        The tearDown is called after each test method, and can be 
+        used to deallocate resources and close connections.
         """
         pass
 
@@ -30,14 +30,14 @@ class TestCap(unittest.TestCase):
         self.assertEqual(result, 'A Veritable Flock Of Ducks')
 
     def test_words_with_apostrophes (self):
-        text = "\"did they get 'em?\", he asked."
+        text = "\"did they find 'em?\", he asked."
         result = cap.capitalizer(text)
-        self.assertEqual(result, "\"Did They Get 'Em?\", He Asked.")
+        self.assertEqual(result, "\"Did They Find 'Em?\", He Asked.")
 
     def test_words_with_quotes(self):
-        text = "\"you're awesome,\" said daffy duck"
+        text = "\"we're on our way,\" she replied"
         result = cap.capitalizer(text)
-        self.assertEqual(result, "\"You're Awesome,\" Said Daffy Duck")
+        self.assertEqual(result, "\"We're On Our Way,\" She Replied")
 
     # [ADD A TEST HERE]
 
