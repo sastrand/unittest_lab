@@ -52,6 +52,8 @@ class TestCap(unittest.TestCase):
         self.assertEqual(result, "Username: @Maya")
        
     # [ADD A TEST HERE]
+    
+    # [ADD ANOTHER TEST HERE]
 
 
 if __name__ == '__main__':
