@@ -22,31 +22,31 @@ class TestCap(unittest.TestCase):
         pass
 
     def test_one_word(self):
-        text = 'duck'
+        text = 'spam'
         result = cap.capitalizer(text)
-        self.assertEqual(result, 'Duck')
+        self.assertEqual(result, 'Spam')
 
     def test_multiple_words(self):
-        text = 'a veritable flock of ducks'
+        text = 'so much spam'
         result = cap.capitalizer(text)
-        self.assertEqual(result, 'A Veritable Flock Of Ducks')
+        self.assertEqual(result, 'So Much Spam')
 
     def test_words_with_apostrophes (self):
         text = "\"did they find 'em?\", he asked."
         result = cap.capitalizer(text)
-        self.assertEqual(result, "\"Did They Find 'Em?\", He Asked.")
+        self.assertEqual(result, "\"Did They Find 'Em?\" He Asked.")
         
     def test_leading_number(self):
-        text = "the 49ers wikipedia page"
+        text = "the 49ers organize"
         result = cap.capitalizer(text)
-        self.assertEqual(result, "The 49ers Wikipedia page")
+        self.assertEqual(result, "The 49ers Organize")
 
     def test_words_with_quotes(self):
         text = "\"we're on our way,\" she replied"
         result = cap.capitalizer(text)
         self.assertEqual(result, "\"We're On Our Way,\" She Replied")
         
-    def test_leading_at_symbol(self):
+    def test_leading_at_sign(self):
         text = "Username: @maya"
         result = cap.capitalizer(text)
         self.assertEqual(result, "Username: @Maya")
