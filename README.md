@@ -11,5 +11,5 @@ And try this workflow
   * Modify the code in `cap.py` to address the error
   * Repeat until all the tests pass
 
-> Test code from Bill Lubanovic, Introducing Python 
+> Test code from Bill Lubanovic, *Introducing Python* 
 [github](https://github.com/madscheme/introducing-python)
