@@ -8,7 +8,8 @@ Leading numbers should be considered the first character, and left unchanged, so
 * Based on this problem specification, add one more unit tests to `test.py` that tests a case otherwise unaccounted for.
 
 * There is one bad unit test. It runs, but it doesn't test what the problem specification describes.    
-In order to get all the tests to pass, find this bad unit test and change it to reflect the problem specification.
+In order to get all the tests to pass, find this bad unit test and change it to reflect the problem specification.    
+(You may find it helpful to skip this step and come back to it when you're testing your code and getting some tests to pass.)
 
 * Finally, try this workflow
   * Run `python3 tests.py` 
