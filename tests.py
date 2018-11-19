@@ -51,7 +51,10 @@ class TestCap(unittest.TestCase):
         result = cap.capitalizer(text)
         self.assertEqual(result, "Username: @Maya")
        
-    # [ADD A TEST HERE]
+    def test_all_sym(self):
+        text = "!@#$%"
+        result = cap.capitalizer(text)
+        self.assertEqual(result, "!@#$%")
 
 
 if __name__ == '__main__':
