@@ -56,6 +56,13 @@ class TestCap(unittest.TestCase):
         result = cap.capitalizer(text)
         self.assertEqual(result, "!@#$%")
 
+    def test_empty_str(self):
+        result = cap.capitalizer("")
+        self.assertEqual(result, "")
+
+    def test_all_nums(self):
+        result = cap.capitalizer("1234 n college ave.")
+        self.assertEqual(result, "1234 N College Ave.")
 
 if __name__ == '__main__':
     unittest.main()
